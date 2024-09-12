@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout responsive structure</title>
+    <link rel="stylesheet" href="../css/Customstyle.css">
+</head>
+<style>
+    table{
+        width: 90%;
+    }
+
+    thead{
+        background-color: maroon;
+        color: white;
+    }
+    tbody{
+        background-color: rgb(248, 209, 33);
+        color: maroon;
+    }
+    tfoot{
+        background-color: white;
+    }
+    button{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: white;
+        padding: 10px;
+        size: 30px;
+    }
+    
+</style>
+<body>
+    <header>
+         
+        <div>
+            <img id="image" src="../img/MSU.png" alt="">
+            <h1>College of Information and Computing Sciences</h1>
+            <h2>Bachelor of Science in Information System</h2>
+        </div>
+        <div class="container">
+            <a href="../index.html">HOME</a> |
+            <a href="about.html">ABOUT</a> |
+            <a href="contactus.html">CONTACT US</a> |
+            <a href="inquiry.html">ADMISSION</a> |
+            <a href="profile.html">PROFILE</a> 
+            <button id="home_btn"><a href="login.html">LOG IN</a></button>
+
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li>
+                    <br><a href="head.html">Headings</a><br><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="tables.html">Tables</a><br><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="list.html">HTML List</a><br><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="form.html">Programs</a><br><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="image.html">Image</a><br><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="logout.html">Forms</a> <br><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="formpost.php">Form Post Method</a>
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <h1><br><b><u>NESTED TABLES</u></b></h1>
+            
+            <table border="1">
+                <figcaption><b>Table 1.</b>This is a sample data of table</figcaption>
+                <thead>
+                    <tr>
+                        <th colspan="3">Content Of a Table</th>
+                    </tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Tourism
+                            <table style="border-color: white;" border="1">
+                                
+                                <tr style="background-color: maroon; color: white;">
+                                    <th>Name</th>
+                                    <th>Age</th>
+                                </tr>
+                                <tr>
+                                    <td>Lexi</td>
+                                    <td>22</td>
+                                </tr>
+                                <tr>
+                                    <td>Lore</td>
+                                    <td>20</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>02</td>
+                        <td>Php 1500.00</td>
+                    </tr>
+                    <tr>
+                        <td>Information System</td>
+                        <td>05</td>
+                        <td>Php 4500.00</td>
+                    </tr>
+                    <tr>
+                        <td>Education</td>
+                        <td>01</td>
+                        <td>Php 500.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><small>Marinduque State University</small></td>
+                        
+                        <td><small>Sta. Cruz Campus</small></td>
+                    </tr>
+                </tfoot>
+            </table> <br>
+            <button><a href="tables.html">Back</a></button>
+        </article>
+        <footer>
+            <br><br><hr>
+            <h1>Marinduque State University</h1>
+            <div>
+                
+                <a href="refund.html"> Refund policy</a> |
+                <a href="term.html"> Term of Use</a> |
+                <a href="private.html"> Private policy</a> |
+                <a href="faq.html"> News</a> |
+                <a href="affliate.html"> Affiliate</a> 
+                
+            </div>
+            <div>
+                <p>
+                    <h4>Copright A TUTORIAL POINTS (MARINDUE)
+                    PRIVATE LIMITED.ALL RIGHT Reserved</h4>
+                </p>
+            </div>
+        </footer>
+    </section>
+    
+</body>
+</html>

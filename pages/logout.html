@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout responsive structure</title>
+    <link rel="stylesheet" href="../css/Customstyle.css">
+    <style>
+        .form1{
+            float: left;
+        }
+        .form2{
+            float: right;
+            padding-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div>
+            <img id="image" src="../img/MSU.png" alt="">
+            <h1>College of Information and Computing Sciences</h1>
+            <h2>Bachelor of Science in Information System</h2>
+        </div>
+        <div class="container">
+            <a href="../index.html">HOME</a> |
+            <a href="about.html">ABOUT</a> |
+            <a href="contactus.html">CONTACT US</a> |
+            <a href="inquiry.html">ADMISSION</a> |
+            <a href="profile.html">PROFILE</a> 
+            <button id="home_btn"><a href="login.html">LOG IN</a></button>
+
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li>
+                    <br><a href="head.html">Headings</a><br><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="tables.html">Tables</a><br><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="list.html">HTML List</a><br><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="form.html">Programs</a><br><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="image.html">Image</a><br><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="logout.html">Forms</a> <br><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="formpost.php">Form Post Method</a>
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <h1><br><b><u>Forms</u></b></h1>
+            <div class="form1">
+                <form action="tables.html" method="get">
+                    <label for="">FirstName: </label>
+                    <input style="margin-left: 36px;" type="text" name="fname" id="fname"><br>
+                    <label for="">LastName:   </label>
+                    <input style="margin-left: 39px;" type="text" name="lname" id="lname"><br>
+
+                    <label for="">Date: </label>
+                    <input style="margin-left: 78px;" type="date" name="datenow" id="datenow"required><br>
+                    <label for="">Email: </label>
+                    <input style="margin-left: 70px;" type="email" name="emailadd" id="emailadd"required> <br>
+                    <label for="">Button:</label>
+                    <input style="margin-left: 63px" type="button" value="Reset"><br>
+                    <label for="">Color: </label>
+                    <input style="margin-left: 73px; size: 1px;" type="color" name="colorname" id="colorname"><br>
+                    <label for="">UploadFile: </label>
+                    <input style="margin-left: 33px;" type="file" name="filedata" id="filedata"> <br>
+                    <label for="">Data Time Data: </label>
+                    <input type="datetime" name="datetimeData" id="datatimeData"> <br>
+                    <label for="">Password: </label>
+                    <input style="margin-left: 44px;" type="password" name="passwordData" id="passwordData"> <br>
+                    <label for="">Selection: </label>
+                    <select style="margin-left: 47px;" name="" id="">
+                        <option value="">--Choose a Fruit--</option>
+                        <option value="">Mango</option>
+                        <option value="">Apple</option>
+                        <option value="">Orange</option>
+                        <option value="">Banana</option>
+                    </select>
+                    <br> <br>
+                    <button disabled>Disabled Button</button> <br>
+                    <fieldset style="padding-top: 10px;">
+                        <input type="radio" id="english">
+                        <label for="english">English</label>
+                        <input type="radio" id="english">
+                        <label for="english">Hindi</label>
+                        <input type="radio" id="english">
+                        <label for="english">Filipino</label>
+                    </fieldset>
+                    <br>
+                    <fieldset style="padding-top: 13px;">
+                        <textarea name="" id="" value="Please Input Your Message" placeholder="Please Input Your Message"></textarea>
+                    </fieldset>
+                    <br>
+                    <label for="">Data List: </label>
+                    <input list="values" name="answer">
+                    <datalist id="values">
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="C#">C#</option>
+                        <option value="PHP">PHP</option>
+                    </datalist>
+                    <br><br>
+                </form>
+                <fieldset>
+                    <Legend><b>Caption</b></Legend>
+                    <p>This is an example Legend Format</p>
+                </fieldset> <br>
+                <input type="submit" value="submit">
+            </div>
+            <div class="form2">
+                <form action="formpost.php" method="post">
+                <fieldset>
+                    <Legend><b>Form Input Data</b></Legend>
+                    <label for="">Enter Your Name: </label>
+                    <input type="text" name="name" id="name"> <br>
+                    <label for="">Enter Your Age: </label>
+                    <input style="margin-left: 16px;" type="number" name="age" id="age"> <br>
+                    <label for="">Input Month: </label>
+                    <input style="margin-left: 33px;" type="month" name="dataMonth" id="dataMonth"> <br>
+                    <label for="">Week: </label>
+                    <input style="margin-left: 85px;" type="week" name="dataWeek" id="dataWeek"> <br>
+                    <label for="">Time:</label>
+                    <input style="margin-left: 88px;" type="time" name="dataTime" id="dataTime"><br><br>
+                    <input type="submit" value="submit">
+                </fieldset>
+                </form>
+            </div>
+        </article>
+        <footer>
+            <br><br><hr>
+            <h1>Marinduque State University</h1>
+            <div>
+                
+                <a href="refund.html"> Refund policy</a> |
+                <a href="term.html"> Term of Use</a> |
+                <a href="private.html"> Private policy</a> |
+                <a href="faq.html"> News</a> |
+                <a href="affliate.html"> Affiliate</a> 
+                
+            </div>
+            <div>
+                <p>
+                    <h4>Copright A TUTORIAL POINTS (MARINDUE)
+                    PRIVATE LIMITED.ALL RIGHT Reserved</h4>
+                </p>
+            </div>
+        </footer>
+    </section>
+    
+</body>
+</html>
